@@ -5,6 +5,7 @@
     text-decoration: none;
 }
 
+/*page wrapper for sizing */
 .wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -20,6 +21,7 @@ body {
 
 }
 
+/* navbar styling */
 .container {
     max-width: 100%;
 }
@@ -28,6 +30,7 @@ nav {
     position: fixed;
     top: 2.5%;
     width: 920px;
+    margin: 10px;
     background-color: rgb(255, 255, 255);
     padding: 0 .5em;
     border-radius: 40px;
@@ -47,9 +50,7 @@ nav ul {
     align-items: center;
 }
 
-
-
-nav  ul li a {
+nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +65,47 @@ nav  ul li a span {
     font-size: 15px;
 }
 
+#logo {
+    width: 120px;
+    position: relative;
+    
+}
+
+#logo-phone-view {
+    display: none;
+}
+
+#phone-home-img {
+    display: none;
+}
+
+.header-box {
+    padding: 80px;
+}
+ 
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 900px; 
+  }
+   */
+  /* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Style for button that takes to form */
 #get-started-btn {
     position: relative;
     right: -40px;
@@ -75,12 +117,142 @@ nav  ul li a span {
 }
 
 
-#logo {
-    width: 120px;
+ /* media queries for responsive design */
+@media screen and (max-width: 930px) {
+
+    nav {
+        width: 95%;
+        right: 0px;
+    }
+
+    nav  ul li a span {
+        display: none;
+        
+    }
+
+    #get-started-btn {
+        right: -60px;
+    }
+
 }
 
-#phone-home {
-    width: 900px;
-    position: absolute;
-    bottom: 10px;
+@media screen and (max-width: 849px) {
+    nav{
+        right: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 1.3em;
+    }
+
+    #get-started-btn {
+        right: -100px;
+    }
+
 }
+
+@media screen and (max-width: 820px) {
+    nav ul li a {
+        font-size: 1em;
+        padding: 1.3em;
+    }
+
+    #get-started-btn {
+        right: -100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li a {
+        padding: 1.5em;
+    }
+
+    #get-started-btn {
+        right: -20px
+    }
+}
+
+@media screen and (max-width: 756px) {
+    #get-started-btn {
+        display: none;
+    }
+
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .column {
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    nav {
+        right: 3px;
+    }
+    nav ul li a {
+        padding: .75em;
+    }
+
+    #phone-home-img {
+        display: flex;
+        width: 60vw;
+
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    nav {
+        right: 2px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    nav {
+        right: 0px;
+        width: 95%;
+    }
+
+    nav ul li a {
+        padding: .75em;
+    }
+
+    #get-started-btn {
+        display: none;
+    }
+
+    #logo {
+        right: -10px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    nav {
+        right: 0;
+        width: 95%;
+    }
+
+    nav ul li a {
+        padding: .55em;
+    }
+
+    #get-started-btn {
+        display: none;
+    }
+
+    #logo {
+        right: -10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    nav ul li a {
+        padding: .5em;
+    }
+
+}
+
