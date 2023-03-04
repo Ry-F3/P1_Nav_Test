@@ -116,8 +116,34 @@ nav  ul li a span {
     background-color: rgba(243, 112, 90, 1);
 }
 
+.hero-container {
+    width: 100%;
+    
+}
+
+.hero-image {
+    background: url("https://raw.githubusercontent.com/Ry-F3/Ai.img/main/assets/images/product.jpeg?");
+    background-size: 750px;
+    background-repeat: no-repeat;
+    padding: 150px;
+
+}
+
+#desktop-hero-image {
+    width: 50vw;
+}
+
+#page-mascot {
+    z-index: 5;
+    position: absolute;
+    width: 8vw;
+    top: 558px;
+    float: right;
+    right: 118px;
+}
+
 footer {
-    position: sticky;
+    position: fixed;
     background-color: white;
     bottom: 0;
     width: 100%;
@@ -208,8 +234,12 @@ footer {
     }
 
     #phone-home-img {
+        position: relative;
         display: flex;
-        width: 60vw;
+        width: 78vw;
+        right: -41px;
+        bottom: 22px;
+        z-index: -1;
 
     }
 
