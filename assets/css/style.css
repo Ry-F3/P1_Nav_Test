@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+.page-width {
+    max-width: 2440px;
+}
+
 /*page wrapper for sizing */
 .wrapper {
     margin-right: auto;
@@ -121,25 +125,51 @@ nav  ul li a span {
     
 }
 
-.hero-image {
-    background: url("https://raw.githubusercontent.com/Ry-F3/Ai.img/main/assets/images/product.jpeg?/tr=oi-Ry-F3/Ai.img/main/assets/images/Ai.%20(23).png");
-    background-size: 750px;
-    background-repeat: no-repeat;
-    padding: 250px;
-
+.column-padding {
+    height: 900px;
 }
 
-#desktop-hero-image {
-    width: 50vw;
-}
-
-#page-mascot {
-    z-index: 5;
+/* .hero-image::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    width: 8vw;
-    top: 558px;
+    bottom: -345px;
+    left: 535px;
+    background: url("https://raw.githubusercontent.com/Ry-F3/Ai.img/main/assets/images/mascot.png");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    z-index: 5;
+} */
+
+#mascot-container {
+    border: 1px solid blue;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    
+}
+#mascot-image {
+    max-width: 20%;
+    position: relative;
     float: right;
-    right: 118px;
+   
+}
+
+.hero-image {
+    background: url("https://ik.imagekit.io/wxo449wpo/product.jpeg?");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+    
+    
+
 }
 
 footer {
